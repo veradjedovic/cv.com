@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^prijava$ index.php [NC]
+RewriteRule ^obavestenje$ view/moratePopunitiSvaPolja.php [NC]
+RewriteRule ^poslato$ view/proces.php [NC]
+
+ErrorDocument 404 http://localhost/cv.com/view/nepostojecastrana.php
+

@@ -1,0 +1,18 @@
+AuthType Basic
+AuthName "Login"
+AuthUserFile c:/wamp/www/cv.com/admin/.htpasswd
+Require valid-user
+
+RewriteEngine On
+
+RewriteRule ^admin$ index.php [NC]
+RewriteRule ^logovanje$ view/index.html [NC]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?mvccontroller=$1&mvcmethod=$2 [NC]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([0-9]+)$ index.php?mvccontroller=$1&mvcmethod=$2&podaci=$3 [NC]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([0-9]+)$ index.php?mvccontroller=$1&mvcmetho$2&sektorId=$3 [NC]
+
+ErrorDocument 404 http://localhost/cv.com/admin/view/nepostojecastrana.php
+
+
+
+
