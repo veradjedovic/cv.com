@@ -23,7 +23,7 @@ define("RVREMEVIDLJIVO", "1");
 define("STR_SPREMANEVIDLJIVO", "0");
 define("STR_SPREMAVIDLJIVO", "1");
 
-define("APP_PATH","c:/wamp/www/cv.com");
+define("APP_PATH","/var/www/html/cv.com");
 define("Loaded",TRUE);
 
 function aload($name) {
